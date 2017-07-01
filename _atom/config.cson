@@ -1,0 +1,40 @@
+"*":
+  core:
+    allowPendingPaneItems: false
+    audioBeep: false
+    automaticallyUpdate: false
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "language-ruby-on-rails"
+      "language-gfm"
+      "linter-puppet-lint"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+  editor:
+    fontFamily: "Andale Mono"
+    fontSize: 11
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    zoomFontWhenCtrlScrolling: true
+  "exception-reporting":
+    userId: "f135463b-91b6-7386-6faa-96d4e5d0c8de"
+  "go-plus":
+    panel:
+      currentHeight: "10.422535211267606vh"
+  "linter-puppet-lint":
+    oldVersion: false
+  "linter-rubocop": {}
+  "linter-scss-lint": {}
+  "linter-ui-default":
+    panelHeight: 69
+  minimap:
+    absoluteMode: true
+    displayCodeHighlights: false
+  welcome:
+    showOnStartup: false

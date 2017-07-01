@@ -1,0 +1,50 @@
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
+[user]
+  name = takumakume
+  email = takuma.kume@pepabo.com
+[github]
+  user = takumakume
+[credential]
+  helper = cache
+[core]
+  editor = vim
+  pager = lv -c
+[color]
+  ui = auto
+[diff]
+  compactionHeuristic = true
+[alias]
+  st   = status
+  df   = diff
+  dfc  = diff --cached
+  aa   = add --all
+  ap   = add -p
+  ci   = commit
+  co   = checkout
+  b    = branch
+  g    = grep -n
+  pl   = pull
+  pr   = pull --rebase
+  cp   = cherry-pick
+  fp   = fetch --prune
+  gsub = git-gsub
+  branches = branch -a
+  tags     = tag
+  stashes  = stash list
+  remotes  = remote -v
+  unstage  = reset -q HEAD --
+  discard  = checkout --
+  uncommit = reset --mixed HEAD~
+  amend    = commit --amend
+[push]
+  default = current
+[ghq]
+  root = ~/src
+[browse-remote "github.com"]
+  top = https://{host}/{path}
+  ref = https://{host}/{path}/tree/{short_ref}
+  rev = https://{host}/{path}/commit/{commit}
+  pr = https://{host}/{path}/pull/{short_ref}
+  file = "https://{host}/{path}/{file.directory? and :tree or :blob}/{short_rev}/{file}{lines && \"#L%s\" % lines.join(\"-\")}"
